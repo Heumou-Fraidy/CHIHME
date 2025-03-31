@@ -4170,3 +4170,336 @@ body{
 /*=========================
 	End Footer CSS
 ===========================*/
+
+
+chi-section {
+    margin-bottom: 30px;
+}
+
+.chi-section-title {
+    background-color: #2c3e86;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Note Box */
+.chi-note-box {
+    background-color: #f0f8ff;
+    border-left: 4px solid #2c3e86;
+    padding: 10px;
+    margin-top: 15px;
+    color: #2c3e86;
+}
+
+/* Table Styles */
+.chi-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.chi-table th, 
+.chi-table td {
+    border: 1px solid #2c3e86;
+    padding: 10px;
+    text-align: left;
+}
+
+.chi-table th {
+    background-color: #e6f2ff;
+    color: #2c3e86;
+}
+
+/* Program Grid */
+.chi-program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.chi-program-card {
+    border: 2px solid #2c3e86;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.chi-program-header {
+    background-color: #2c3e86;
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.chi-program-content {
+    padding: 15px;
+    flex: 1;
+}
+
+.chi-program-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chi-program-content ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #e6f2ff;
+}
+
+.chi-program-content ul li:last-child {
+    border-bottom: none;
+}
+
+/* Footer Note */
+.chi-footer-note {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-radius: 8px;
+    color: #2c3e86;
+    font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .chi-container {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    .chi-program-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Header Styles */
+.chihme-header {
+    background-color: #2c3e86;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.chihme-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* About Section */
+.chihme-about-section {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+
+.chihme-about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.chihme-about-container h2 {
+    color: #2c3e86;
+    border-bottom: 2px solid #2c3e86;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Identification Section */
+.chihme-identification-section {
+    background-color: #ffffff;
+    padding: 30px 0;
+    margin-bottom: 30px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.chihme-identification-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.chihme-identification-container h2 {
+    color: #2c3e86;
+    border-bottom: 2px solid #2c3e86;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.chihme-identification-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chihme-identification-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.chihme-identification-list li:last-child {
+    border-bottom: none;
+}
+
+.chihme-identification-list strong {
+    color: #2c3e86;
+    min-width: 180px;
+    display: inline-block;
+}
+
+/* Accreditation Section */
+.chihme-accreditation-section {
+    background-color: #f0f8ff;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+
+.chihme-accreditation-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.chihme-accreditation-container h2 {
+    color: #2c3e86;
+    border-bottom: 2px solid #2c3e86;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.chihme-accreditation-text {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.chihme-accreditation-text strong {
+    color: #2c3e86;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .chihme-header h1 {
+        font-size: 1.4rem;
+        padding: 0 15px;
+    }
+    
+    .chihme-identification-list li {
+        padding: 12px 0;
+    }
+    
+    .chihme-identification-list strong {
+        display: block;
+        margin-bottom: 3px;
+    }
+}
+
+/* Research Section */
+.chihme-research-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+    border-top: 1px solid #e6f2ff;
+    border-bottom: 1px solid #e6f2ff;
+}
+
+.chihme-research-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.chihme-research-title-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.chihme-research-title-container h2 {
+    color: #2c3e86;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.chihme-research-title-container h2:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #2c3e86;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.chihme-research-title-container img {
+    margin: 15px 0;
+    max-height: 80px;
+}
+
+.chihme-research-title-container p {
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.chihme-research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.chihme-research-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 30px 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #e6f2ff;
+}
+
+.chihme-research-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.chihme-research-card i {
+    font-size: 2.5rem;
+    color: #2c3e86;
+    margin-bottom: 20px;
+}
+
+.chihme-research-card h3 {
+    color: #2c3e86;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.chihme-research-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .chihme-research-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .chihme-research-card {
+        padding: 25px 20px;
+    }
+}
