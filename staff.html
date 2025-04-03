@@ -1,0 +1,647 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="CHIME staff, faculty, professors, educators">
+		<meta name="description" content="Meet our experienced and dedicated staff at CHIME - Comfort Higher Institute of Management Health and Education">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+        <title>Our Staff - CHIME Comfort Higher Institute of Management Health and Education</title>
+		
+		<!-- Favicon -->
+        <link rel="icon" href="img/favicon.png">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="css/nice-select.css">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" href="css/icofont.css">
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="css/slicknav.min.css">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="css/owl-carousel.css">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="css/datepicker.css">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="css/animate.min.css">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="css/magnific-popup.css">
+		
+		<!-- Medipro CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        
+        <style>
+            /* Staff Page Custom Styles */
+            .staff-section {
+                padding: 80px 0;
+                background: #f8f9fa;
+            }
+            .staff-card {
+                background: #fff;
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgba(0,0,0,0.1);
+                margin-bottom: 30px;
+                transition: transform 0.3s ease;
+                overflow: hidden;
+            }
+            .staff-card:hover {
+                transform: translateY(-10px);
+            }
+            .staff-image {
+                position: relative;
+                height: 250px;
+                overflow: hidden;
+            }
+            .staff-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.5s ease;
+            }
+            .staff-card:hover .staff-image img {
+                transform: scale(1.05);
+            }
+            .staff-details {
+                padding: 25px;
+            }
+            .staff-name {
+                font-size: 22px;
+                font-weight: 600;
+                color: #1A76D1;
+                margin-bottom: 5px;
+            }
+            .staff-position {
+                color: #6c757d;
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 15px;
+                display: block;
+            }
+            .staff-bio {
+                margin-bottom: 15px;
+                color: #555;
+                line-height: 1.6;
+            }
+            .staff-education {
+                font-size: 14px;
+                color: #666;
+                margin-bottom: 3px;
+            }
+            .staff-contact {
+                margin-top: 15px;
+                padding-top: 15px;
+                border-top: 1px solid #eee;
+            }
+            .staff-contact a {
+                color: #1A76D1;
+                margin-right: 15px;
+                transition: color 0.3s ease;
+            }
+            .staff-contact a:hover {
+                color: #0056b3;
+            }
+            .staff-social {
+                margin-top: 15px;
+            }
+            .staff-social a {
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                line-height: 32px;
+                background: #f0f0f0;
+                color: #1A76D1;
+                border-radius: 50%;
+                text-align: center;
+                margin-right: 8px;
+                transition: all 0.3s ease;
+            }
+            .staff-social a:hover {
+                background: #1A76D1;
+                color: #fff;
+            }
+            .staff-filter {
+                margin-bottom: 40px;
+            }
+            .staff-filter button {
+                background: transparent;
+                border: 2px solid #1A76D1;
+                color: #1A76D1;
+                border-radius: 50px;
+                padding: 8px 20px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
+            .staff-filter button.active, 
+            .staff-filter button:hover {
+                background: #1A76D1;
+                color: #fff;
+            }
+            .staff-department {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                background: rgba(26, 118, 209, 0.9);
+                color: #fff;
+                padding: 5px 15px;
+                border-radius: 30px;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            .section-title {
+                margin-bottom: 50px;
+            }
+            .section-title h2 {
+                position: relative;
+                padding-bottom: 15px;
+                margin-bottom: 20px;
+                font-size: 32px;
+                font-weight: 700;
+            }
+            .section-title h2:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 3px;
+                width: 60px;
+                background: #1A76D1;
+            }
+            .section-title p {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+            .breadcrumbs {
+                padding: 60px 0;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: relative;
+                z-index: 1;
+            }
+            .breadcrumbs:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(16, 31, 59, 0.7);
+                z-index: -1;
+            }
+            .breadcrumbs h2 {
+                color: #fff;
+                font-size: 36px;
+                margin-bottom: 15px;
+                font-weight: 700;
+            }
+            .breadcrumbs .bread-list {
+                display: inline-block;
+            }
+            .breadcrumbs .bread-list li {
+                display: inline-block;
+                margin-right: 10px;
+                position: relative;
+                font-weight: 500;
+            }
+            .breadcrumbs .bread-list li:after {
+                content: "\f105";
+                font-family: 'FontAwesome';
+                margin-left: 10px;
+                color: #fff;
+            }
+            .breadcrumbs .bread-list li:last-child:after {
+                display: none;
+            }
+            .breadcrumbs .bread-list li, 
+            .breadcrumbs .bread-list li a {
+                color: #fff;
+                font-size: 15px;
+            }
+            .breadcrumbs .bread-list li a:hover {
+                color: #1A76D1;
+            }
+        </style>
+    </head>
+    <body>
+	
+		<!-- Header Area -->
+		<header class="header" >
+			<!-- Topbar -->
+			<div class="topbar">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-5 col-12">
+							<!-- Contact -->
+							<ul class="top-link">
+								<li><a href="about.html">About</a></li>
+								<li><a href="staff.html">Staff</a></li>
+								<li><a href="#appointment">Contact</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+							</ul>
+							<!-- End Contact -->
+						</div>
+						<div class="col-lg-6 col-md-7 col-12">
+							<!-- Top Contact -->
+							<ul class="top-contact">
+								<li><i class="fa fa-phone"></i>+237 51910924</li>
+								<li><i class="fa fa-envelope"></i><a href="mailto:ngwang25@mail.com">ngwang25@mail.com</a></li>
+							</ul>
+							<!-- End Top Contact -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Topbar -->
+			<!-- Header Inner -->
+			<div class="header-inner">
+				<div class="container">
+					<div class="inner">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-12">
+								<!-- Start Logo -->
+								<div class="logo">
+									<a href="index.html"><img src="img/chime logo.png" alt="#"></a>
+								</div>
+								<!-- End Logo -->
+								<!-- Mobile Nav -->
+								<div class="mobile-nav"></div>
+								<!-- End Mobile Nav -->
+							</div>
+							<div class="col-lg-7 col-md-9 col-12">
+								<!-- Main Menu -->
+								<div class="main-menu">
+									<nav class="navigation">
+										<ul class="nav menu">
+											<li><a href="index.html">Home <i class="icofont-rounded-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="index.html">Home Page 1</a></li>
+												</ul>
+											</li>
+											<li><a href="study.html">Study</a></li>
+											<li><a href="about.html">About</a></li>
+											<li><a href="research.html">Research <i class="icofont-rounded-down"></i></a></li>
+											<li class="active"><a href="staff.html">Staff</a></li>
+										</ul>
+									</nav>
+								</div>
+								<!--/ End Main Menu -->
+							</div>
+							<div class="col-lg-2 col-12">
+								<div class="get-quote">
+									<a href="appointment.html" class="btn btn-primary btn-sm">Book Appointment</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+		<!-- End Header Area -->
+		
+		<!-- Breadcrumbs -->
+        <div class="breadcrumbs overlay" style="background:#1A76D1;">
+            <div class="container">
+                <div class="bread-inner">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Our Academic Staff</h2>
+                            <ul class="bread-list">
+                                <li><a href="index.html">Home</a></li>
+                                <li class="active">Staff</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Breadcrumbs -->
+        
+        <!-- Start Staff Section -->
+        <section class="staff-section section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <h2>Meet Our Expert Staff</h2>
+                            <p>Our dedicated faculty brings together years of academic excellence and professional experience to provide exceptional education at CHIME.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <div class="staff-filter text-center">
+                            <button class="active" data-filter="*">All Departments</button>
+                            <button data-filter=".management">Management</button>
+                            <button data-filter=".health">Health Sciences</button>
+                            <button data-filter=".education">Education</button>
+                            <button data-filter=".technology">Technology</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row staff-items">
+                    <!-- Staff Member 1 -->
+                    <div class="col-lg-4 col-md-6 col-12 management">
+                        <div class="staff-card">
+                            <div class="staff-image">
+                                <img src="img/staff/staff-1.jpg" alt="Dr. John Smith">
+                                <span class="staff-department">Management</span>
+                            </div>
+                            <div class="staff-details">
+                                <h3 class="staff-name">Dr. John Smith</h3>
+                                <span class="staff-position">Professor of Business Management</span>
+                                <p class="staff-bio">Dr. Smith has over 15 years of experience in business management and strategic leadership. His research focuses on sustainable business practices and entrepreneurship in developing economies.</p>
+                                <p class="staff-education">Ph.D. in Business Administration, Harvard University</p>
+                                <p class="staff-education">MBA, Stanford University</p>
+                                <div class="staff-contact">
+                                    <a href="mailto:john.smith@chime.edu"><i class="fa fa-envelope"></i> Email</a>
+                                    <a href="#"><i class="fa fa-calendar"></i> Schedule Meeting</a>
+                                </div>
+                                <div class="staff-social">
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Staff Member 2 -->
+                    <div class="col-lg-4 col-md-6 col-12 health">
+                        <div class="staff-card">
+                            <div class="staff-image">
+                                <img src="img/staff/staff-2.jpg" alt="Dr. Sarah Johnson">
+                                <span class="staff-department">Health Sciences</span>
+                            </div>
+                            <div class="staff-details">
+                                <h3 class="staff-name">Dr. Sarah Johnson</h3>
+                                <span class="staff-position">Associate Professor of Public Health</span>
+                                <p class="staff-bio">Dr. Johnson specializes in epidemiology and global health systems. She has worked with WHO on multiple projects across Africa and brings practical field experience to her teaching.</p>
+                                <p class="staff-education">Ph.D. in Public Health, Johns Hopkins University</p>
+                                <p class="staff-education">MPH, London School of Hygiene & Tropical Medicine</p>
+                                <div class="staff-contact">
+                                    <a href="mailto:sarah.johnson@chime.edu"><i class="fa fa-envelope"></i> Email</a>
+                                    <a href="#"><i class="fa fa-calendar"></i> Schedule Meeting</a>
+                                </div>
+                                <div class="staff-social">
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Staff Member 3 -->
+                    <div class="col-lg-4 col-md-6 col-12 education">
+                        <div class="staff-card">
+                            <div class="staff-image">
+                                <img src="img/staff/staff-3.jpg" alt="Prof. Michael Williams">
+                                <span class="staff-department">Education</span>
+                            </div>
+                            <div class="staff-details">
+                                <h3 class="staff-name">Prof. Michael Williams</h3>
+                                <span class="staff-position">Professor of Educational Psychology</span>
+                                <p class="staff-bio">Prof. Williams has dedicated his career to understanding learning methodologies and their application in different cultural contexts. He's a pioneer in adaptive learning technologies.</p>
+                                <p class="staff-education">Ph.D. in Educational Psychology, University of Cambridge</p>
+                                <p class="staff-education">M.Ed., University of Toronto</p>
+                                <div class="staff-contact">
+                                    <a href="mailto:michael.williams@chime.edu"><i class="fa fa-envelope"></i> Email</a>
+                                    <a href="#"><i class="fa fa-calendar"></i> Schedule Meeting</a>
+                                </div>
+                                <div class="staff-social">
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Staff Member 4 -->
+                    <div class="col-lg-4 col-md-6 col-12 technology">
+                        <div class="staff-card">
+                            <div class="staff-image">
+                                <img src="img/staff/staff-4.jpg" alt="Dr. Amanda Chen">
+                                <span class="staff-department">Technology</span>
+                            </div>
+                            <div class="staff-details">
+                                <h3 class="staff-name">Dr. Amanda Chen</h3>
+                                <span class="staff-position">Associate Professor of Information Systems</span>
+                                <p class="staff-bio">Dr. Chen is an expert in emerging technologies with a focus on healthcare informatics. She has collaborated with major tech companies to develop health monitoring systems.</p>
+                                <p class="staff-education">Ph.D. in Computer Science, MIT</p>
+                                <p class="staff-education">MSc in Health Informatics, University of California</p>
+                                <div class="staff-contact">
+                                    <a href="mailto:amanda.chen@chime.edu"><i class="fa fa-envelope"></i> Email</a>
+                                    <a href="#"><i class="fa fa-calendar"></i> Schedule Meeting</a>
+                                </div>
+                                <div class="staff-social">
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Staff Member 5 -->
+                    <div class="col-lg-4 col-md-6 col-12 health">
+                        <div class="staff-card">
+                            <div class="staff-image">
+                                <img src="img/staff/staff-5.jpg" alt="Dr. Robert Mbeki">
+                                <span class="staff-department">Health Sciences</span>
+                            </div>
+                            <div class="staff-details">
+                                <h3 class="staff-name">Dr. Robert Mbeki</h3>
+                                <span class="staff-position">Professor of Nursing Sciences</span>
+                                <p class="staff-bio">Dr. Mbeki has extensive experience in clinical nursing and healthcare management across various African healthcare systems. He specializes in emergency and critical care nursing.</p>
+                                <p class="staff-education">Ph.D. in Nursing, University of Cape Town</p>
+                                <p class="staff-education">MSN, University of Nairobi</p>
+                                <div class="staff-contact">
+                                    <a href="mailto:robert.mbeki@chime.edu"><i class="fa fa-envelope"></i> Email</a>
+                                    <a href="#"><i class="fa fa-calendar"></i> Schedule Meeting</a>
+                                </div>
+                                <div class="staff-social">
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Staff Member 6 -->
+                    <div class="col-lg-4 col-md-6 col-12 management">
+                        <div class="staff-card">
+                            <div class="staff-image">
+                                <img src="img/staff/staff-6.jpg" alt="Prof. Elena Kouassi">
+                                <span class="staff-department">Management</span>
+                            </div>
+                            <div class="staff-details">
+                                <h3 class="staff-name">Prof. Elena Kouassi</h3>
+                                <span class="staff-position">Professor of Financial Management</span>
+                                <p class="staff-bio">Prof. Kouassi is a financial expert with experience in both academic research and private sector consulting. Her work focuses on microfinance and economic development in West Africa.</p>
+                                <p class="staff-education">Ph.D. in Economics, London School of Economics</p>
+                                <p class="staff-education">MSc in Finance, HEC Paris</p>
+                                <div class="staff-contact">
+                                    <a href="mailto:elena.kouassi@chime.edu"><i class="fa fa-envelope"></i> Email</a>
+                                    <a href="#"><i class="fa fa-calendar"></i> Schedule Meeting</a>
+                                </div>
+                                <div class="staff-social">
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Staff Section -->
+    
+        <!-- Footer Area -->
+        <footer id="footer" class="footer ">
+            <!-- Footer Top -->
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="single-footer">
+                                <h2>About Us</h2>
+                                <p>CHIME Comfort Higher Institute of Health management and education was founded in 2021 and is located in the Eastern region of Cameroon, Bafoussam precisely.</p>
+                                <!-- Social -->
+                                <ul class="social">
+                                    <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                                    <li><a href="#"><i class="icofont-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                                    <li><a href="#"><i class="icofont-vimeo"></i></a></li>
+                                    <li><a href="#"><i class="icofont-pinterest"></i></a></li>
+                                </ul>
+                                <!-- End Social -->
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="single-footer f-link">
+                                <h2>Quick Links</h2>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+                                            <li><a href="about.html"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+                                            <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>    
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Testimonials</a></li>
+                                            <li><a href="faq.html"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
+                                            <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>    
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="single-footer">
+                                <h2>Open Hours</h2>
+                                <p>List of our open hours below</p>
+                                <ul class="time-sidual">
+                                    <li class="day">Monday - Friday <span>8.00-20.00</span></li>
+                                    <li class="day">Saturday <span>9.00-18.30</span></li>
+                                    <li class="day">Sunday <span>Closed</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ End Footer Top -->
+            <!-- Copyright -->
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <div class="copyright-content">
+                                <p>© Copyright 2025 | All Rights Reserved by <a href="https://smarttech-africa.netlify.app/" target="_blank">Smart Tech Africa</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ End Copyright -->
+        </footer>
+        <!--/ End Footer Area -->
+        
+        <!-- jquery Min JS -->
+        <script src="js/jquery.min.js"></script>
+        <!-- jquery Migrate JS -->
+        <script src="js/jquery-migrate-3.0.0.js"></script>
+        <!-- jquery Ui JS -->
+        <script src="js/jquery-ui.min.js"></script>
+        <!-- Easing JS -->
+        <script src="js/easing.js"></script>
+        <!-- Color JS -->
+        <script src="js/colors.js"></script>
+        <!-- Popper JS -->
+        <script src="js/popper.min.js"></script>
+        <!-- Bootstrap Datepicker JS -->
+        <script src="js/bootstrap-datepicker.js"></script>
+        <!-- Jquery Nav JS -->
+        <script src="js/jquery.nav.js"></script>
+        <!-- Slicknav JS -->
+        <script src="js/slicknav.min.js"></script>
+        <!-- ScrollUp JS -->
+        <script src="js/jquery.scrollUp.min.js"></script>
+        <!-- Niceselect JS -->
+        <script src="js/niceselect.js"></script>
+        <!-- Tilt Jquery JS -->
+        <script src="js/tilt.jquery.min.js"></script>
+        <!-- Owl Carousel JS -->
+        <script src="js/owl-carousel.js"></script>
+        <!-- Isotope JS -->
+        <script src="js/isotope.pkgd.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+        
+        <!-- Main JS -->
+        <script src="js/main.js"></script>
+        
+        <!-- Custom Script for Staff Filtering -->
+        <script>
+            $(document).ready(function(){
+                // Initialize Isotope for filtering
+                var $grid = $('.staff-items').isotope({
+                    itemSelector: '.management, .health, .education, .technology',
+                    layoutMode: 'fitRows'
+                });
+                
+                // Filter items on button click
+                $('.staff-filter button').on('click', function(){
+                    var filterValue = $(this).attr('data-filter');
+                    $grid.isotope({ filter: filterValue });
+                    
+                    // Add active class
+                    $('.staff-filter button').removeClass('active');
+                    $(this).addClass('active');
+                });
+            });
+        </script>
+    </body>
+</html>
